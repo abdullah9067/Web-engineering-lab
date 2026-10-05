@@ -1,0 +1,235 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1 id="greeting">Welcome to My Web Engineering Lab</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#office-hours" aria-current="location">Office Hours</a>
+                </li>
+                <li>
+                    <a href="#feedback">Send Feedback</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section id="office-hours">
+            <h2>Office Hours</h2>
+
+            <div class="office-content">
+
+                <figure>
+                    <svg
+                        width="100"
+                        height="100"
+                        viewBox="0 0 100 100"
+                        role="img"
+                        aria-labelledby="clock-title">
+                        
+                        <title id="clock-title">Office hours clock icon</title>
+
+                        <circle cx="50" cy="50" r="40"
+                            fill="none"
+                            stroke="black"
+                            stroke-width="4"/>
+
+                        <line x1="50" y1="50" x2="50" y2="25"
+                            stroke="black"
+                            stroke-width="4"/>
+
+                        <line x1="50" y1="50" x2="70" y2="60"
+                            stroke="black"
+                            stroke-width="4"/>
+                    </svg>
+
+                    <figcaption>
+                        Office hours are available during the times listed below.
+                    </figcaption>
+                </figure>
+
+                <table>
+                    <caption>Weekly Office Hours Schedule</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Opening Time</th>
+                            <th scope="col">Closing Time</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Monday</th>
+                            <td><time datetime="09:00">9:00 AM</time></td>
+                            <td><time datetime="12:00">12:00 PM</time></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Tuesday</th>
+                            <td><time datetime="09:00">9:00 AM</time></td>
+                            <td><time datetime="12:00">12:00 PM</time></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Wednesday</th>
+                            <td><time datetime="10:00">10:00 AM</time></td>
+                            <td><time datetime="13:00">1:00 PM</time></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Thursday</th>
+                            <td><time datetime="09:00">9:00 AM</time></td>
+                            <td><time datetime="12:00">12:00 PM</time></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Friday</th>
+                            <td><time datetime="09:00">9:00 AM</time></td>
+                            <td><time datetime="11:00">11:00 AM</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+        <svg
+            class="divider"
+            width="100%"
+            height="30"
+            viewBox="0 0 800 30"
+            aria-hidden="true">
+            
+            <line
+                x1="0"
+                y1="15"
+                x2="800"
+                y2="15"
+                stroke="black"
+                stroke-width="2"/>
+        </svg>
+
+        <section id="feedback">
+
+            <h2>Send Feedback</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        aria-describedby="email-hint"
+                        required>
+
+                    <small id="email-hint">
+                        Please enter a valid email address.
+                    </small>
+                </div>
+
+                <fieldset>
+
+                    <legend>Topic</legend>
+
+                    <div>
+                        <input
+                            type="radio"
+                            id="course"
+                            name="topic"
+                            value="course"
+                            required>
+
+                        <label for="course">Course</label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            id="website"
+                            name="topic"
+                            value="website">
+
+                        <label for="website">Website</label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            id="other"
+                            name="topic"
+                            value="other">
+
+                        <label for="other">Other</label>
+                    </div>
+
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Contact me:</p>
+
+        <address>
+            Email:
+            <a href="mailto:abdullah@example.com">
+                alianfal955@gmail.com
+            </a>
+            <br>
+
+            Web Engineering Lab
+            <br>
+
+            Pakistan
+        </address>
+
+    </footer>
+
+</body>
+</html>
+```
